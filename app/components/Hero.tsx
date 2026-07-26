@@ -34,7 +34,13 @@ export default async function Hero() {
   return (
     <section id="hero" className="hero-section">
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-[58%_42%] gap-[var(--space-16)] pt-[var(--space-20)] pb-[var(--space-32)]">
+        <div
+          className="grid grid-cols-1 lg:grid-cols-[58%_42%] gap-[var(--space-16)]"
+          style={{
+            paddingBlockStart: "var(--space-20)",
+            paddingBlockEnd: "var(--space-32)",
+          }}
+        >
           <div className="hero-content flex flex-col items-start gap-[var(--space-6)]">
             <p className="label hero-eyebrow">
               <ProjectImage id="eyebrow_mark" />
@@ -43,7 +49,7 @@ export default async function Hero() {
               Inland drayage turnaround.
             </h1>
             <p className="hero-subheadline text-[var(--color-steel)]">
-              Direct terminal coverage and carrier vetting for time-sensitive inland moves.
+              Direct terminal coverage and automated detention settlement for freight forwarders.
             </p>
             <div
               className="hero-metric flex flex-col gap-[var(--space-2)]"
