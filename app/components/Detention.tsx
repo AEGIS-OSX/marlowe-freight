@@ -19,15 +19,14 @@ export default function Detention() {
             Detention-claim settlement.
           </h2>
           <p className="detention-body text-[var(--color-steel)] text-[var(--text-body)] leading-[var(--lh-body)] max-w-[540px]">
-            We eliminate the friction between terminal dwell charges and carrier reimbursement. Marlowe documents, disputes, and settles detention claims on your behalf — average resolution in 72 hours.
+            We eliminate the friction of detention recovery. When a carrier is delayed at a terminal gate or rail ramp, the claim is logged via GPS timestamp. Marlowe settles approved detention claims within 48 hours of delivery. No manual paperwork. No six-week wait for reimbursement. We handle the recovery from the terminal so you can maintain your margins.
           </p>
         </motion.div>
         
         <div className="detention-image-panel relative h-[300px] md:h-[500px] w-full md:mr-[calc(-1*var(--gutter-desktop))] overflow-hidden">
-          <ProjectImage 
-            id="feature_3" 
-            className="w-full h-full object-cover"
-          />
+          <div className="w-full h-full [&>img]:w-full [&>img]:h-full [&>img]:object-cover">
+            <ProjectImage id="feature_3" />
+          </div>
         </div>
       </div>
     </section>
