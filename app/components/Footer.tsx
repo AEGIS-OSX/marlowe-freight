@@ -7,11 +7,11 @@ export default function Footer() {
         </span>
         <a
           href="tel:+18885127704"
-          className="footer-phone font-[family-name:var(--font-mono)] text-[var(--text-data)] text-[var(--color-ink)] hover:text-[var(--color-rust)] hover:transition-[color] hover:duration-150 hover:ease-[var(--ease-out)] focus-visible:outline-[2px] focus-visible:outline-[var(--color-focus)] focus-visible:outline-offset-[2px]"
+          className="footer-phone font-[family-name:var(--font-mono)] text-[var(--text-data)] text-[var(--color-ink)] hover:text-[var(--color-rust)] hover:transition-[color] hover:duration-150 hover:ease-[var(--ease-out)] focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-[var(--color-focus)] focus-visible:outline-offset-[2px]"
         >
           (888) 512-7704
         </a>
-        <p className="footer-authority-data font-[family-name:var(--font-mono)] text-[var(--text-data)] text-[var(--color-steel)]">
+        <p className="footer-authority data font-[family-name:var(--font-mono)] text-[var(--text-data)] text-[var(--color-steel)]">
           MC #1592033 &middot; DOT #4102994 &middot; $75,000 Surety Bond
         </p>
       </div>
