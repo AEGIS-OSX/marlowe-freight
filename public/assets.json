@@ -1,37 +1,37 @@
 {
   "logo": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/marlowe-freight/cleo/1785050642266-logo.png",
+    "alt": "A minimalist, flat vector logo mark for Marlowe Freight featuring interlocking geometric beams in Ink #1A1A18 and Rust Signal #C0440E on a Canvas #F4F1EC background. The design emphasizes operational ",
     "width": 1024,
     "height": 1024
   },
   "hero": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/marlowe-freight/cleo/1785050519204-hero.png",
+    "alt": "A high-fidelity hero image depicting a functional freight office desk with paper invoices and industrial equipment, emphasizing operational utility and the #F4F1EC / #1A1A18 palette.",
     "width": 1920,
     "height": 1080
   },
   "feature_1": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/marlowe-freight/cleo/1785050483026-feature_1.png",
+    "alt": "A macro shot of freight rate sheets on a steel desk, emphasizing the tactile, paper-based operational reality of Marlowe Freight. The image uses the Canvas #F4F1EC and Steel #4A4F54 palette with flat,",
     "width": 800,
     "height": 600
   },
   "feature_2": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/marlowe-freight/cleo/1785050496862-feature_2.png",
+    "alt": "A macro shot of freight manifests and an industrial steel clip, emphasizing operational precision and the 'Ink' and 'Canvas' palette. It avoids atmospheric romance in favor of the utility-first aesthe",
     "width": 800,
     "height": 600
   },
   "feature_3": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/marlowe-freight/cleo/1785050479569-feature_3.png",
+    "alt": "A macro shot of a 'SETTLED' stamp on a freight rate sheet, emphasizing operational finality and the Rust Signal #C0440E accent. The image uses the Canvas #F4F1EC and Ink #1A1A18 palette to reinforce t",
     "width": 800,
     "height": 600
   },
   "social_proof": {
-    "url": "",
-    "alt": "",
+    "url": "https://zkvkbpxrxnfynqqeytke.supabase.co/storage/v1/object/public/marketing-assets/marlowe-freight/cleo/1785050833322-social_proof.png",
+    "alt": "A macro shot of stacked freight invoices on a steel desk, emphasizing the tactile, operational reality of logistics. The palette adheres to the Canvas (#F4F1EC), Ink (#1A1A18), and Steel (#4A4F54) spe",
     "width": 1200,
     "height": 800
   }
