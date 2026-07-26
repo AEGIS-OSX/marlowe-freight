@@ -1,5 +1,3 @@
-"use client";
-
 import Nav from "@/app/components/Nav";
 import Hero from "@/app/components/Hero";
 import Coverage from "@/app/components/Coverage";
