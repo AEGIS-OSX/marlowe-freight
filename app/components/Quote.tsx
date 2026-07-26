@@ -1,12 +1,12 @@
 "use client"
 
-import { useState } from "react"
+import { useState, FormEvent } from "react"
 import { motion } from "framer-motion"
 
 export default function Quote() {
   const [status, setStatus] = useState<"idle" | "loading" | "success">("idle")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
     setStatus("loading")
     setTimeout(() => {
@@ -28,7 +28,7 @@ export default function Quote() {
             Request a rate.
           </h2>
           <p className="quote-subheadline font-[family-name:var(--font-body)] text-[18px] leading-[1.6] text-[var(--color-steel)] mb-[40px]">
-            Response within 15 minutes during operating hours.
+            Response within 15 minutes during operational hours.
           </p>
 
           {status === "success" ? (
