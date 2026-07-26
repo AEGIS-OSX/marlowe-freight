@@ -43,7 +43,7 @@ export default async function Hero() {
         >
           <div className="hero-content flex flex-col items-start gap-[var(--space-6)]">
             <p className="label hero-eyebrow">
-              <ProjectImage id="eyebrow_mark" />
+              <ProjectImage id="logo" />
             </p>
             <h1 className="hero-headline text-[var(--color-ink)]">
               Inland drayage turnaround.
