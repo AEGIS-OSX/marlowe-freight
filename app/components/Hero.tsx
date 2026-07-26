@@ -8,7 +8,7 @@ async function getTerminalCount(): Promise<number | null> {
         headers: {
           Authorization: `Bearer ${process.env.MARLOWE_COVERAGE_API_KEY}`,
         },
-        cache: "no-store",
+        cache: "force-cache",
       }
     )
 
