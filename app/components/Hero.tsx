@@ -3,7 +3,7 @@ import { ProjectImage } from "@/app/components/ProjectImage"
 async function getTerminalCount(): Promise<number | null> {
   try {
     const response = await fetch(
-      "https://coverage.marlowefreight.internal/v1/terminals/active-count",
+      "https://coverage.marlowe-freight.com/api/v1/terminals/active-count",
       {
         headers: {
           Authorization: `Bearer ${process.env.MARLOWE_COVERAGE_API_KEY}`,
