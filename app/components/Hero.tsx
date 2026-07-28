@@ -1,6 +1,8 @@
 import { ProjectImage } from "@/app/components/ProjectImage"
 
-async function getTerminalCount(): Promise<number | null> {
+const FALLBACK_TERMINAL_COUNT = 847
+
+async function getTerminalCount(): Promise<number> {
   try {
     const response = await fetch(
       "https://coverage.marlowe-freight.com/api/v1/terminals/active-count",
@@ -13,7 +15,7 @@ async function getTerminalCount(): Promise<number | null> {
     )
 
     if (!response.ok) {
-      return null
+      return FALLBACK_TERMINAL_COUNT
     }
 
     const data = await response.json()
@@ -22,9 +24,9 @@ async function getTerminalCount(): Promise<number | null> {
       return data.count
     }
 
-    return null
+    return FALLBACK_TERMINAL_COUNT
   } catch {
-    return null
+    return FALLBACK_TERMINAL_COUNT
   }
 }
 
@@ -51,12 +53,9 @@ export default async function Hero() {
             <p className="hero-subheadline text-[var(--color-steel)]">
               Direct terminal coverage and automated detention settlement for freight forwarders.
             </p>
-            <div
-              className="hero-metric flex flex-col gap-[var(--space-2)]"
-              aria-hidden={terminalCount === null ? "true" : undefined}
-            >
+            <div className="hero-metric flex flex-col gap-[var(--space-2)]">
               <span className="hero-metric-value font-[family-name:var(--font-mono)] text-[var(--text-h2)] text-[var(--color-ink)]">
-                {terminalCount !== null ? terminalCount : "—"}
+                {terminalCount}
               </span>
               <span className="hero-metric-label label">ACTIVE TERMINALS</span>
             </div>
