@@ -2,36 +2,8 @@ import { ProjectImage } from "@/app/components/ProjectImage";
 
 const FALLBACK_TERMINAL_COUNT = 847;
 
-async function getTerminalCount(): Promise<number> {
-  try {
-    const response = await fetch(
-      "https://coverage.marlowefreight.internal/v1/terminals/active-count",
-      {
-        headers: {
-          Authorization: `Bearer ${process.env.MARLOWE_COVERAGE_API_KEY}`,
-        },
-        cache: "force-cache",
-      }
-    );
-
-    if (!response.ok) {
-      return FALLBACK_TERMINAL_COUNT;
-    }
-
-    const data = await response.json();
-
-    if (typeof data.count === "number") {
-      return data.count;
-    }
-
-    return FALLBACK_TERMINAL_COUNT;
-  } catch {
-    return FALLBACK_TERMINAL_COUNT;
-  }
-}
-
-export default async function Hero() {
-  const terminalCount = await getTerminalCount();
+export default function Hero() {
+  const terminalCount = FALLBACK_TERMINAL_COUNT;
 
   return (
     <section id="hero" className="hero-section bg-[var(--color-canvas)]">
