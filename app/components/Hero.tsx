@@ -3,6 +3,9 @@ import { ProjectImage } from "@/app/components/ProjectImage";
 const FALLBACK_TERMINAL_COUNT = 847;
 
 async function getTerminalCount(): Promise<number> {
+  if (!process.env.MARLOWE_COVERAGE_API_KEY) {
+    throw new Error("MARLOWE_COVERAGE_API_KEY is required at build time");
+  }
   try {
     const response = await fetch(
       "https://coverage.marlowefreight.internal/v1/terminals/active-count",
